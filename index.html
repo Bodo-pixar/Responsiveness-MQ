@@ -6,12 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="images" />
   </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    * {
+      margin: 0;
+      border: 0;
+      padding: 0;
+    }
+    main {
+      background-color: hsl(0, 100%, 74%);
+      background-image: url(/images/bg-intro-desktop.png);
+      margin: auto;
+      border: 20%;
+      padding: 30em;
+      height: 30px;
+      width: 40%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+    }
+    .one {
+      width: 200%;
+      justify-content: center;
+      align-items: center;
+      padding: 5%;
+      margin: 5%;
+      padding-bottom: 20%;
+      padding-right: 30%;
+    }
+    h1 {
+      width: 150%;
+      padding: 10px;
+      font-size: 200px;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+    }
+
+    p {
+      width: 200%;
+      font-family: "Poppins", sans-serif;
+      font-size: 10px;
+      color: white;
+    }
+
+    .two > * {
+      box-sizing: border-box;
+      border-radius: 2%;
+
+      margin: 10%;
+      background-color: rgb(243, 234, 234);
+    }
+    .bg {
+      width: 260%;
+      border-radius: 2%;
+      height: 2em;
+      padding: 10%;
+      padding-top: 7%;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 17px;
+
+      background-color: hsl(248, 32%, 49%);
+    }
+    .form {
+      width: 260%;
+      height: 40vh;
+      padding: 30%;
+
+      font-size: 16px;
+      border-color: white;
+    }
+    input {
+      width: 100px;
+      height: 30%;
+
+      background-color: rgb(243, 234, 234);
+
+      padding: 10px;
+    }
+    button {
+      box-sizing: border-box;
+      border-radius: 10px;
+      width: 100%;
+      padding: 5%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      background-color: hsl(154, 59%, 51%);
+      font-family: "Poppins", sans-serif;
+      font-size: 10px;
+      color: white;
+    }
+  </style>
   <body>
     <main>
-      <table>
-        <tr>
-          <td>
       <div class="one">
         <h1>Learn to code by watching others</h1>
         <p>
@@ -20,25 +111,23 @@
           invaluable.
         </p>
       </div>
-      </td>
-      <td>
+
       <div class="two">
-        <form action="multiple questions">
-          <label for="first name">First Name</label>
-          <input type="text" />
-          <label for="last name">Last Name</label>
-          <input type="text" />
-          <label for="email address"> Email Address</label>
-          <input type="email" />
-          <label for="password">Password</label>
-          <input type="password" />
-          <button>7-days free trial</button>
-        </form>
+        <div class="bg">
+          <p>Try it free 7 days then $20/mo. thereafter</p>
+        </div>
+        <div class="form">
+          <form action="multiple questions">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+
+            <input type="email" placeholder="Email Address" />
+            <input type="password" placeholder="Password" />
+
+            <button placeholder="button">CLAIM YOUR FREE TRIAL</button>
+          </form>
+        </div>
       </div>
-       </td>
-    </tr>
-    </table>
     </main>
-   
   </body>
 </html>
