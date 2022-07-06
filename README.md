@@ -1,2 +1,2 @@
-Here is the the Build a single-page responsive registration form Task.
+Here is the the single-page responsive registration form Task.
 
